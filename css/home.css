@@ -1,0 +1,109 @@
+body {
+    background-color: var(--gray-1);
+}
+
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    margin-top: 10%;
+    background-color: #fff;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.main-container .title {
+    color: var(--text-color);
+    margin-bottom: 1%;
+}
+
+.main-container form {
+    display: flex;
+    width: 100%;
+}
+.main-container form input {
+    background-color: var(--gray-1);
+    margin: 0;
+    border-radius: 14px 0 0 14px;
+    height: 60px;
+    color: var(--text-color);
+    border: 0;
+    width: 100%;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    padding: 2%;
+}
+.main-container form button {
+    background-color: var(--red-color);
+    margin: 0;
+    border-radius: 0 14px 14px 0;
+    height: 60px;
+    color: var(--white-color);
+    border: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.main-container form button:hover {
+    opacity: .7;
+}
+
+.action-content {
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.action-content .action-item {
+    width: 40%;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    padding: 2%;
+    margin-bottom: 2%;
+    transition: .25s;
+    cursor: pointer;
+}
+.action-content .action-item:hover {
+    opacity: .7;
+}
+.action-content .action-item .action-item-pokeball {
+    width: 20px;
+    height: 20px;
+    opacity: .5;
+}
+.action-content .action-item .text {
+    color: var(--white-color);
+}
+.action-content .action-item .action-item-arrow {
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.action-content #action-item-pokedex {
+    background-color: var(--red-color);
+}
+.action-content #action-item-types {
+    background-color: var(--green-color);
+}
+.action-content #action-item-skills {
+    background-color: var(--blue-color);
+}

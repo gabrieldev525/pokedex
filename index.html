@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+
+  <link rel='stylesheet' href='css/index.css'>
+  <link rel='stylesheet' href='css/home.css'>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+</head>
+<body>
+
+  <div class="header-background">
+    <div class="main-container">
+      <span class='title'>Qual pokemon você está buscando?</span>
+
+      <form onsubmit="return;">
+        <input type='text' class='input-field' />
+        <button type='submit'><i class='fa fa-search'></i></button>
+      </form>
+
+      <div class='action-content'>
+        <div class='action-item' id='action-item-pokedex'>
+          <img src='./images/pokeball.png' class='action-item-pokeball' />
+          <span class='text'>Pokedex</span>
+          <i class='fa fa-arrow-circle-right action-item-arrow'></i>
+        </div>
+
+        <div class='action-item' id='action-item-types'>
+          <img src='./images/pokeball.png' class='action-item-pokeball' />
+          <span class='text'>Tipos</span>
+          <i class='fa fa-arrow-circle-right action-item-arrow'></i>
+        </div>
+
+        <div class='action-item' id='action-item-skills'>
+          <img src='./images/pokeball.png' class='action-item-pokeball' />
+          <span class='text'>Habilidades</span>
+          <i class='fa fa-arrow-circle-right action-item-arrow'></i>
+        </div>
+
+        <div class='action-item' id='action-item-pokedex'>
+          <img src='./images/pokeball.png' class='action-item-pokeball' />
+          <span class='text'>Pokedex</span>
+          <i class='fa fa-arrow-circle-right action-item-arrow'></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src='js/index.js'></script>
+</body>
+</html>

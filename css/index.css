@@ -1,0 +1,22 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --gray-1: #E0E0E0;
+    --text-color: #4F4F4F;
+    --white-color: #fff;
+    --red-color: #E64556;
+    --green-color: #31AE9D;
+    --blue-color: #065A9C;
+    --orange-color: #F15F3E;
+}
