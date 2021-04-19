@@ -1,0 +1,133 @@
+body {
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4% 0;
+    width: 100%;
+}
+
+.header h4 {
+    color: var(--text-color);
+    margin: 0;
+}
+
+.search-bar-form {
+    width: 30%;
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pokemon-list .pokemon-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 25%;
+    border-radius: 14px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    background-color: var(--blue-color);
+    margin-bottom: 2%;
+}
+/* pokemon item color */
+.pokemon-list .pokemon-item.normal {
+
+}
+.pokemon-list .pokemon-item.fighting {
+
+}
+.pokemon-list .pokemon-item.flying {
+
+}
+.pokemon-list .pokemon-item.poison {
+
+}
+.pokemon-list .pokemon-item.ground {
+
+}
+.pokemon-list .pokemon-item.rock {
+
+}
+.pokemon-list .pokemon-item.bug {
+
+}
+.pokemon-list .pokemon-item.ghost {
+
+}
+.pokemon-list .pokemon-item.steel {
+
+}
+.pokemon-list .pokemon-item.fire {
+    background-color: var(--orange-color);
+}
+.pokemon-list .pokemon-item.water {
+
+}
+.pokemon-list .pokemon-item.grass {
+    background-color: var(--green-color);
+}
+.pokemon-list .pokemon-item.electric {
+
+}
+.pokemon-list .pokemon-item.psychic {
+
+}
+.pokemon-list .pokemon-item.ice {
+
+}
+.pokemon-list .pokemon-item.dragon {
+
+}
+.pokemon-list .pokemon-item.dark {
+
+}
+.pokemon-list .pokemon-item.fairy {
+
+}
+.pokemon-list .pokemon-item.unknown {
+
+}
+.pokemon-list .pokemon-item.shadow {
+
+}
+
+.pokemon-list .pokemon-item .pokemon-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+.pokemon-item .pokemon-header h4, .pokemon-item .pokemon-header span {
+    color: #fff;
+    margin: 0;
+}
+
+.pokemon-item .pokemon-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+.pokemon-info .pokemon-types {
+    display: flex;
+    flex-direction: column;
+}
+.pokemon-types .pokemon-type-item {
+    border-radius: 10px;
+    padding: 5%;
+    background-color: var(--blue-color-dark);
+    width: 80px;
+    text-align: center;
+}
+.pokemon-types .pokemon-type-item span {
+    color: var(--white-color);
+}
+
+.pokemon-info .pokemon-image {
+    width: 25%;
+}
