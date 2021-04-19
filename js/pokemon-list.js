@@ -41,7 +41,7 @@ const renderPokemonList = () => {
     let pokemonDetail = await fetchPokemonDetail(pokemon.url)
 
     pokemonListElement.insertAdjacentHTML('beforeend', `
-      <div class='pokemon-item ${pokemonDetail.types[0].type.name}'>
+      <div class='pokemon-item ${pokemonDetail.types[0].type.name}' onclick='openPokemonDetail(${pokemonDetail.id})'>
         <div class='pokemon-header'>
           <h4>${pokemon.name}</h4>
           <span>#${pad(pokemonDetail.id, 3)}</span>
@@ -59,3 +59,5 @@ const renderPokemonList = () => {
     `)
   })
 }
+
+const openPokemonDetail = id => window.location.href = `pokemon-detail.html?pokemon=${id}`
