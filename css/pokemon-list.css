@@ -131,3 +131,26 @@ body {
 .pokemon-info .pokemon-image {
     width: 25%;
 }
+
+
+.pagination {
+    display: flex;
+    margin: 2% 0;
+}
+.pagination button {
+    border: 0;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: var(--gray-1);
+    color: var(--text-color);
+    cursor: pointer;
+    margin-right: 1%;
+    transition: 0.25s;
+}
+.pagination button:hover:not(:disabled) {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+.pagination button:disabled {
+    opacity: .5;
+}

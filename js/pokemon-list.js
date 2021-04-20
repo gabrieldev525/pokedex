@@ -1,7 +1,17 @@
 let pokemonList = {}
+let pokemonListEndpoint = 'https://pokeapi.co/api/v2/pokemon'
 
 window.onload = () => {
   fetchPokemonList()
+
+  document.querySelector('#pagination-previous').onclick = () => {
+    pokemonListEndpoint = pokemonList.previous
+    fetchPokemonList()
+  }
+  document.querySelector('#pagination-next').onclick = () => {
+    pokemonListEndpoint = pokemonList.next
+    fetchPokemonList()
+  }
 }
 
 const pad = (num, size) => {
@@ -11,7 +21,7 @@ const pad = (num, size) => {
 
 const fetchPokemonList = async () => {
   pokemonList = {}
-  await fetch('https://pokeapi.co/api/v2/pokemon')
+  await fetch(pokemonListEndpoint)
     .then(res => res.json())
     .then(jsonData => {
       pokemonList = jsonData
@@ -20,6 +30,9 @@ const fetchPokemonList = async () => {
     .catch(() => {
       alert('Aconteceu um erro ao tentar carregar a lista de pokemons')
     })
+
+    document.querySelector('#pagination-previous').disabled = !pokemonList.previous
+    document.querySelector('#pagination-next').disabled = !pokemonList.next
 }
 
 const fetchPokemonDetail = async (url) => {
