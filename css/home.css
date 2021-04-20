@@ -53,9 +53,6 @@ body {
     transition: .25s;
     cursor: pointer;
 }
-.action-content .action-item:hover {
-    opacity: .7;
-}
 .action-content .action-item .action-item-pokeball {
     width: 20px;
     height: 20px;
@@ -72,9 +69,18 @@ body {
 .action-content #action-item-pokedex {
     background-color: var(--red-color);
 }
+.action-content #action-item-pokedex:hover {
+    transform: translateY(-5px);
+}
 .action-content #action-item-types {
     background-color: var(--green-color);
+    opacity: .5;
 }
 .action-content #action-item-skills {
     background-color: var(--blue-color);
+    opacity: .5;
+}
+.action-content #action-item-moves {
+    background-color: var(--orange-color);
+    opacity: .5;
 }

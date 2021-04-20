@@ -53,8 +53,17 @@ const renderPokemonList = () => {
     .forEach(async pokemon => {
     let pokemonDetail = await fetchPokemonDetail(pokemon.url)
 
+    let htmlTypes = ''
+    pokemonDetail.types.forEach(type => {
+      htmlTypes += `
+        <div class='pokemon-type-item pokemon-type-${pokemonDetail.types[0].type.name}'>
+          <span>${type.type.name}</span>
+        </div>
+      `
+    })
+
     pokemonListElement.insertAdjacentHTML('beforeend', `
-      <div class='pokemon-item ${pokemonDetail.types[0].type.name}' onclick='openPokemonDetail(${pokemonDetail.id})'>
+      <div class='pokemon-item pokemon-type-${pokemonDetail.types[0].type.name}' onclick='openPokemonDetail(${pokemonDetail.id})'>
         <div class='pokemon-header'>
           <h4>${pokemon.name}</h4>
           <span>#${pad(pokemonDetail.id, 3)}</span>
@@ -62,9 +71,7 @@ const renderPokemonList = () => {
 
         <div class='pokemon-info'>
           <div class='pokemon-types'>
-            <div class='pokemon-type-item'>
-              <span>Grass</span>
-            </div>
+            ${htmlTypes}
           </div>
           <img src='${pokemonDetail.sprites.front_default}' class='pokemon-image' />
         </div>

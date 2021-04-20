@@ -14,6 +14,7 @@ body, html {
 :root {
     --gray-1: #E0E0E0;
     --gray-2: #EBEBEB;
+    --gray-3: #d1d1d1;
     --text-color: #4F4F4F;
     --white-color: #fff;
     --red-color: #E64556;
@@ -21,6 +22,14 @@ body, html {
     --blue-color: #065A9C;
     --blue-color-dark: #04477B;
     --orange-color: #F15F3E;
+    --purple-color: #953ef1;
+    --limon-color: #b8ed3b;
+    --light-blue-color: #39b1ed;
+    --yellow-color: #ebe82f;
+    --cyan-color: #32edc1;
+    --brown-color: #382e1d;
+    --dark-gray-color: #1a1a1a;
+    --grey-color: #3d3c3c;
 }
 
 .search-bar-form {
@@ -53,4 +62,66 @@ body, html {
 }
 .search-bar-form button:hover {
     opacity: .7;
+}
+
+/* pokemon item color */
+.pokemon-type-normal {
+    background-color: var(--gray-3) !important;
+}
+.pokemon-type-fighting {
+    background-color: var(--brown-color) !important;
+}
+.pokemon-type-flying {
+    background-color: var(--gray-3) !important;
+}
+.pokemon-type-poison {
+    background-color: var(--purple-color) !important;
+}
+.pokemon-type-ground {
+    background-color: var(--brown-color) !important;
+}
+.pokemon-type-rock {
+    background-color: var(--gray-3) !important;
+}
+.pokemon-type-bug {
+    background-color: var(--limon-color) !important;
+}
+.pokemon-type-ghost {
+    background-color: var(--purple-color) !important;
+}
+.pokemon-type-steel {
+    background-color: var(--gray-3) !important;
+}
+.pokemon-type-fire {
+    background-color: var(--orange-color) !important;
+}
+.pokemon-type-water {
+    background-color: var(--light-blue-color) !important;
+}
+.pokemon-type-grass {
+    background-color: var(--green-color) !important;
+}
+.pokemon-type-electric {
+    background-color: var(--yellow-color) !important;
+}
+.pokemon-type-psychic {
+    background-color: var(--purple-color) !important;
+}
+.pokemon-type-ice {
+    background-color: var(--cyan-color) !important;
+}
+.pokemon-type-dragon {
+    background-color: var(--orange-color) !important;
+}
+.pokemon-type-dark {
+    background-color: var(--dark-gray-color) !important;
+}
+.pokemon-type-fairy {
+    background-color: var(--limon-color) !important;
+}
+.pokemon-type-unknown {
+    background-color: var(--gray-1) !important;
+}
+.pokemon-type-shadow {
+    background-color: var(--grey-color) !important;
 }

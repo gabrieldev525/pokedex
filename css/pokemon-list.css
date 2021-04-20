@@ -34,67 +34,8 @@ body {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
     background-color: var(--blue-color);
     margin-bottom: 2%;
-}
-/* pokemon item color */
-.pokemon-list .pokemon-item.normal {
-
-}
-.pokemon-list .pokemon-item.fighting {
-
-}
-.pokemon-list .pokemon-item.flying {
-
-}
-.pokemon-list .pokemon-item.poison {
-
-}
-.pokemon-list .pokemon-item.ground {
-
-}
-.pokemon-list .pokemon-item.rock {
-
-}
-.pokemon-list .pokemon-item.bug {
-
-}
-.pokemon-list .pokemon-item.ghost {
-
-}
-.pokemon-list .pokemon-item.steel {
-
-}
-.pokemon-list .pokemon-item.fire {
-    background-color: var(--orange-color);
-}
-.pokemon-list .pokemon-item.water {
-
-}
-.pokemon-list .pokemon-item.grass {
-    background-color: var(--green-color);
-}
-.pokemon-list .pokemon-item.electric {
-
-}
-.pokemon-list .pokemon-item.psychic {
-
-}
-.pokemon-list .pokemon-item.ice {
-
-}
-.pokemon-list .pokemon-item.dragon {
-
-}
-.pokemon-list .pokemon-item.dark {
-
-}
-.pokemon-list .pokemon-item.fairy {
-
-}
-.pokemon-list .pokemon-item.unknown {
-
-}
-.pokemon-list .pokemon-item.shadow {
-
+    cursor: pointer;
+    transition: .5s;
 }
 
 .pokemon-list .pokemon-item .pokemon-header {
@@ -120,9 +61,11 @@ body {
 .pokemon-types .pokemon-type-item {
     border-radius: 10px;
     padding: 5%;
-    background-color: var(--blue-color-dark);
+    filter: brightness(90%);
+    opacity: .8;
     width: 80px;
     text-align: center;
+    margin-bottom: 5px;
 }
 .pokemon-types .pokemon-type-item span {
     color: var(--white-color);

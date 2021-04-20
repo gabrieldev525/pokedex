@@ -38,11 +38,13 @@ const renderPokemonInfo = () => {
 
   document.querySelector('#pokemon-name').innerHTML = pokemonData.name
 
+  document.querySelector('.header-background').classList.add(`pokemon-type-${pokemonData.types[0].type.name}`)
+
   let pokemonTypeContainer = document.querySelector('.pokemon-type-container')
   pokemonTypeContainer.innerHTML = ''
   pokemonData.types.forEach(type => {
     pokemonTypeContainer.insertAdjacentHTML('beforeend', `
-      <div class='pokemon-type-item'>
+      <div class='pokemon-type-item pokemon-type-${pokemonData.types[0].type.name}'>
         <span>${type.type.name}</span>
       </div>
     `)
