@@ -28,10 +28,12 @@ body {
 .main-container .title {
     color: var(--text-color);
     margin-bottom: 1%;
+    opacity: .5;
 }
 
 .search-bar-form {
     width: 100%;
+    opacity: .5;
 }
 
 .action-content {
